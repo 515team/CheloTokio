@@ -1249,7 +1249,7 @@ async function confirmarNumeros() {
     showLoading('Registrando participación...');
 
     // Register: GET sin base64 — sin problemas de CORS
-    const resp = await callScript({
+    const resp = await callScript(
       action:   'register',
       nombre:   currentUser.nombre,
       cedula:   currentUser.cedula,
